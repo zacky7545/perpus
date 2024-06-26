@@ -122,7 +122,7 @@ session_start();
     ?>
 
     <footer>
-        &copy; 2024 Simple Dashboard. All rights reserved.
+        &copy; 2024 Perpus SMK IT AIRLANGGA. All rights reserved.
     </footer>
 </body>
 </html>
