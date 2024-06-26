@@ -1,0 +1,17 @@
+{
+    "folders": [
+		{
+			"path": "login"
+		},
+		{
+			"path": "../data table"
+		},
+		{
+			"path": "../penerbit_buku"
+		},
+		{
+			"path": "../penerbit"
+		}
+	],
+    "settings": {}
+}
