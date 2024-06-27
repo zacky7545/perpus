@@ -8,7 +8,8 @@ session_start();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PERPUS</title>
-    <style>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">    
+<style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -58,7 +59,11 @@ session_start();
             color: #0056b3;
             text-decoration: underline;
         }
-        footer {
+
+
+        .mySlides {display:none;}      
+
+          footer {
             background-color: #343a40; /* Warna latar belakang footer */
             color: #fff;
             padding: 10px;
@@ -73,6 +78,16 @@ session_start();
     <div class="header">
         <h1>PERPUS</h1>
     </div>
+    <div class="w3-content w3-display-container">
+        <img class="mySlides" src="assets\img\img_buku.jpg" style="width:100%; height:50%;">
+        <img class="mySlides" src="assets\img\img_buk.jpg" style="width:100%">
+        <img class="mySlides" src="assets\img\img_rak.jpg" style="width:100%">
+        <img class="mySlides" src="assets\img\img_buku3.jpg" style="width:100%">
+
+        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+    </div>
+    <br><br><br>
     <div class="container">
         <div class="card" style="background-color: #ffc107; color: #333;">
             <h2>PENGARANG</h2>
@@ -124,6 +139,26 @@ session_start();
     <footer>
         &copy; 2024 Perpus SMK IT AIRLANGGA. All rights reserved.
     </footer>
+
+    <script> 
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+        showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+        }
+        x[slideIndex-1].style.display = "block";  
+        }    
+    </script>
 </body>
 </html>
 
